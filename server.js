@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-import postRoutes from './routes/posts.js';
+import europeRouter from './routes/postsEu.js';
 import ukraineRoutes from './routes/postsUA.js';
 
 // ---- ---- ---- ---- ---- ---- ----
@@ -22,7 +22,7 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
-app.use('/api/posts', postRoutes);
+app.use('/api/europe', europeRouter);
 app.use('/api/ukraine', ukraineRoutes);
 
 // serves the built version of your react app

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const postSchema = mongoose.Schema({
+const postsEuSchema = mongoose.Schema({
     title: String,
     titleStatus: {
         tyle: String,
@@ -28,6 +28,6 @@ const postSchema = mongoose.Schema({
     },
 });
 
-const Posts = mongoose.model('Posts', postSchema);
+const PostsEu = mongoose.model('eu-posts', postsEuSchema);
 
-export default Posts;
+export default PostsEu;
