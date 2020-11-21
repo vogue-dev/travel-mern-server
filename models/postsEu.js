@@ -3,8 +3,8 @@ import mongoose from 'mongoose';
 const postsEuSchema = mongoose.Schema({
     title: String,
     titleStatus: {
-        tyle: String,
-        default: '',
+        type: String,
+        default: 'default',
     },
     price: String,
     description: String,

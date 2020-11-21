@@ -1,9 +1,9 @@
-import PostsEu from '../models/posts.js';
+import PostsEu from '../models/postsEu.js';
 
 export const getPostsEu = async (req, res) => {
     try {
         const postMessages = await PostsEu.find();
-        console.log('getPostsEU', postMessages);
+        console.log('getPostsEu', postMessages);
 
         res.status(200).json(postMessages);
     } catch (error) {

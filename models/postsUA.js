@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
 
-const postsUASchema = mongoose.Schema({
+const postsUaSchema = mongoose.Schema({
     title: String,
     titleStatus: {
-        tyle: String,
-        default: '',
+        type: String,
+        default: 'default',
     },
     price: String,
     description: String,
@@ -28,6 +28,6 @@ const postsUASchema = mongoose.Schema({
     },
 });
 
-const PostsUA = mongoose.model('ua-posts', postsUASchema);
+const PostsUa = mongoose.model('ua-posts', postsUaSchema);
 
-export default PostsUA;
+export default PostsUa;

@@ -9,7 +9,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import europeRouter from './routes/postsEu.js';
-import ukraineRoutes from './routes/postsUA.js';
+import ukraineRoutes from './routes/postsUa.js';
 
 // ---- ---- ---- ---- ---- ---- ----
 
